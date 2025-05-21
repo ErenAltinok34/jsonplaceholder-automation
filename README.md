@@ -1,23 +1,18 @@
-# JSONPlaceholder API Tests
+# API Testing with Pytest - JSONPlaceholder
 
-Bu proje, [JSONPlaceholder](https://jsonplaceholder.typicode.com/) sahte API'si üzerinde Python `pytest` ve `requests` kütüphaneleri kullanılarak yazılmış temel API testlerini içerir.
+This project demonstrates how to test REST API endpoints using `requests` and `pytest` in Python.
 
-## İçindekiler
+## Features
+- GET requests to `/posts` and `/users` endpoints
+- Validates status codes and JSON structure
+- Automated testing with `pytest`
 
-- Kullanıcı (`users`) endpoint testleri
-- Gönderi (`posts`) endpoint testleri
-- `pytest-html` ile HTML test raporu oluşturma
-- Basit API otomasyon testi örneği
-
-## Kurulum
-
-1. Python 3.7+ yüklü olmalı.
-
-2. Sanal ortam oluştur ve aktif et:
+## Getting Started
 
 ```bash
+git clone https://github.com/kullaniciadi/api-testing-jsonplaceholder.git
+cd api-testing-jsonplaceholder
 python -m venv venv
-# Windows için:
-venv\Scripts\activate
-# Linux/Mac için:
-source venv/bin/activate
+source venv/Scripts/activate  # Windows
+pip install -r requirements.txt
+pytest
